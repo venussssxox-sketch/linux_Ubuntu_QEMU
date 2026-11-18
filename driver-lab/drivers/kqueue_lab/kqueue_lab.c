@@ -10,6 +10,8 @@
 #include <linux/poll.h>
 #include <linux/signal.h>
 #include <linux/wait.h>
+#include <linux/uaccess.h>
+#include "../../include/kqueue_lab_ioctl.h"
 
 #define KQUEUE_FIFO_SIZE 4096
 
@@ -171,12 +173,35 @@ static ssize_t kqueue_write(struct file *file,
             count, copied);
     return copied;
 }
+
+static long kqueue_ioctl(struct file *file, unsigned int cmd, unsigned long arg)
+{
+    struct kqueue_info info;
+
+    if (cmd != KQUEUE_IOC_GET_INFO)
+        return -ENOTTY;
+
+    if (mutex_lock_interruptible(&kqueue_fifo_lock) != 0)
+        return -ERESTARTSYS;
+
+    info.capacity = kfifo_size(&kqueue_fifo);
+    info.used = kfifo_len(&kqueue_fifo);
+    info.available = kfifo_avail(&kqueue_fifo);
+    mutex_unlock(&kqueue_fifo_lock);
+
+    if (copy_to_user((void __user *)arg, &info, sizeof(info)) != 0)
+        return -EFAULT;
+
+    return 0;
+}
+
 static const struct file_operations kqueue_fops = {
     .owner = THIS_MODULE,
     .open = kqueue_open,
     .read = kqueue_read,
     .write = kqueue_write,
     .poll = kqueue_poll,
+    .unlocked_ioctl = kqueue_ioctl,
     .fasync = kqueue_fasync,
     .release = kqueue_release,
 };

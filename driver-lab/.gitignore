@@ -19,4 +19,6 @@ drivers/kqueue_lab/.tmp_versions/
 userspace/build/
 rootfs-overlay/root/*.ko
 rootfs-overlay/root/kqueue_*
+rootfs-overlay/root/run-kqueue-regression.sh
+logs/linux.config.before-dwarf
 __pycache__/

@@ -1,8 +1,8 @@
 # ARM64 Linux 数据队列字符设备驱动实验
 
-本项目在 Ubuntu x86_64 主机上使用 Buildroot 和 QEMU 构建 ARM64 Linux 实验环境，并实现 `/dev/kqueue_lab` 数据队列字符设备。驱动以 `miscdevice` 注册设备，使用 4096 字节 `kfifo` 保存共享字节流，并逐步实现非阻塞 I/O、阻塞等待、并发保护、poll 就绪通知、错误路径、模块生命周期和 `SIGIO/fasync` 异步通知。
+本项目在 Ubuntu x86_64 主机上使用 Buildroot 和 QEMU 构建 ARM64 Linux 实验环境，并实现 `/dev/kqueue_lab` 数据队列字符设备。驱动以 `miscdevice` 注册设备，使用 4096 字节 `kfifo` 保存共享字节流，并逐步实现非阻塞 I/O、阻塞等待、并发保护、poll 就绪通知、错误路径、模块生命周期、`SIGIO/fasync` 异步通知和 ioctl 状态查询。
 
-当前所有功能均已使用 Linux 6.12.27 ARM64 QEMU 来宾实际验证。每日学习过程和验证证据按时间记录在 `logs/day01-summary.md` 至 `logs/day05-summary.md`。
+当前所有功能均已使用 Linux 6.12.27 ARM64 QEMU 来宾实际验证。每日学习过程和验证证据按时间记录在 `logs/day01-summary.md` 至 `logs/day06-summary.md`。
 
 ## 当前实现
 
@@ -12,8 +12,10 @@
 - 并发保护：mutex 保护 FIFO，wait queue 负责睡眠与唤醒，等待条件通过带锁助手读取。
 - `.poll`：FIFO 非空报告可读，FIFO 未满报告可写，并支持超时和状态变化唤醒。
 - `.fasync`：用户设置 `F_SETOWN` 与 `O_ASYNC` 后，成功写入触发 `SIGIO/POLL_IN`。
+- `.unlocked_ioctl`：`KQUEUE_IOC_GET_INFO` 返回 FIFO 总容量、当前数据量和剩余空间，不消费队列数据。
 - 模块生命周期：打开的设备文件持有模块引用，关闭后才能安全卸载。
-- 用户态测试：覆盖基本读写、阻塞读写、信号中断、poll、生产者/消费者、`EFAULT`、模块引用和 `SIGIO`。
+- 用户态测试：覆盖基本读写、阻塞读写、信号中断、poll、生产者/消费者、`EFAULT`、模块引用、`SIGIO` 和 ioctl 状态查询。
+- 自动化回归：来宾中的 `run-kqueue-regression.sh` 为每项普通测试重新加载模块，并单独验证设备打开期间拒绝卸载、关闭后允许卸载的生命周期行为。
 
 ## 主要目录
 
@@ -21,6 +23,7 @@
 driver-lab/
 ├── drivers/kqueue_lab/       # 内核模块源码和外部模块 Makefile
 ├── userspace/                # ARM64 用户态测试源码
+├── tests/                    # 测试编排脚本
 ├── env-check/                # 最小环境验收模块源码
 ├── logs/                     # 每日总结、实验说明和实际串口日志
 ├── rootfs-overlay/           # QEMU 来宾部署目录（生成的二进制不纳入 Git）
@@ -107,6 +110,40 @@ python3 verify-qemu.py
 
 脚本需要主机 Python 的 pexpect，本机已检测到。成功会打印 PASS，串口记录保存到 logs/qemu-envcheck.log。它启动自己的临时虚拟机并在验收后关闭。
 
+## QEMU/GDB 源码调试
+
+调试启动脚本在普通 QEMU 参数之外增加 `-s -S`：`-s` 在 TCP 1234 端口开启 GDB 远程服务，`-S` 让虚拟 CPU 在启动时暂停。先在一个终端运行：
+
+本次验证使用的 ARM64 内核配置保存在 `configs/linux-aarch64-virt-debug.config`，其中启用了 `CONFIG_DEBUG_KERNEL`、DWARF 4 调试信息和 `CONFIG_GDB_SCRIPTS`。
+
+```bash
+cd /home/zhaojinxin/linux_Ubuntu/driver-lab
+./start-qemu-debug.sh
+```
+
+再在另一个终端载入包含 DWARF 信息的 `vmlinux` 并连接 QEMU：
+
+```bash
+cd /home/zhaojinxin/linux_Ubuntu/driver-lab
+gdb-multiarch buildroot-2025.02.19/output/build/linux-6.12.27/vmlinux
+```
+
+```gdb
+target remote :1234
+hbreak start_kernel
+continue
+```
+
+来宾启动并加载 `kqueue_lab.ko` 后，可以用 Linux 内核 GDB 辅助命令载入模块符号：
+
+```gdb
+lx-symbols /home/zhaojinxin/linux_Ubuntu/driver-lab/drivers/kqueue_lab
+break kqueue_write if count == 3
+continue
+```
+
+首次源码级调试的断点、调用栈、FIFO 状态和 ARM64 寄存器验证记录见 `logs/day06-summary.md`。
+
 ## 构建 kqueue_lab 模块
 
 在项目目录执行：
@@ -131,7 +168,16 @@ buildroot-2025.02.19/output/host/bin/aarch64-buildroot-linux-gnu-gcc \
   -o userspace/build/kqueue_poll_test
 ```
 
-将模块和所需测试程序复制到 `rootfs-overlay/root/`，再进入 Buildroot 目录执行 `make` 重建 `rootfs.ext4`。启动 QEMU 后加载模块并运行测试：
+将模块、所需测试程序和 `tests/run-kqueue-regression.sh` 复制到 `rootfs-overlay/root/`，再进入 Buildroot 目录执行 `make` 重建 `rootfs.ext4`。启动 QEMU 后可以运行统一回归入口：
+
+```sh
+/root/run-kqueue-regression.sh
+printf 'regression_exit=%s\n' "$?"
+```
+
+脚本依次运行 9 个普通功能测试。每项普通测试前重新加载模块、结束后卸载模块，保证 FIFO 状态相互隔离；模块生命周期测试在后台保持设备打开，确认第一次卸载被拒绝，关闭设备后第二次卸载成功。2026-11-18 的 ARM64 QEMU 实测汇总为 `passed: 10`、`failed: 0`、退出码 0。
+
+也可以单独运行各程序定位失败：
 
 ```sh
 insmod /root/kqueue_lab.ko
@@ -144,11 +190,12 @@ insmod /root/kqueue_lab.ko
 /root/kqueue_error_test
 /root/kqueue_hold_open_test
 /root/kqueue_sigio_test
+/root/kqueue_ioctl_test
 rmmod kqueue_lab
 poweroff
 ```
 
-各程序的测试目标、实际退出码和关键输出见 `logs/day05-summary.md`。二进制文件和模块构建产物可由源码重新生成，因此不提交到 Git。
+各程序的测试目标、实际退出码和关键输出见 `logs/day05-summary.md` 与 `logs/day06-summary.md`。二进制文件和模块构建产物可由源码重新生成，因此不提交到 Git。
 
 ## 本次排错记录
 
