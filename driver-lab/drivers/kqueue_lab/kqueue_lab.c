@@ -7,6 +7,8 @@
 #include <linux/errno.h>
 #include <linux/kfifo.h>
 #include <linux/mutex.h>
+#include <linux/poll.h>
+#include <linux/signal.h>
 #include <linux/wait.h>
 
 #define KQUEUE_FIFO_SIZE 4096
@@ -15,6 +17,29 @@ static DEFINE_KFIFO(kqueue_fifo, unsigned char, KQUEUE_FIFO_SIZE);
 static DEFINE_MUTEX(kqueue_fifo_lock);
 static DECLARE_WAIT_QUEUE_HEAD(kqueue_read_queue);
 static DECLARE_WAIT_QUEUE_HEAD(kqueue_write_queue);
+static struct fasync_struct *kqueue_async_queue;
+
+static bool kqueue_fifo_has_data(void)
+{
+    bool ready;
+
+    mutex_lock(&kqueue_fifo_lock);
+    ready = !kfifo_is_empty(&kqueue_fifo);
+    mutex_unlock(&kqueue_fifo_lock);
+
+    return ready;
+}
+
+static bool kqueue_fifo_has_space(void)
+{
+    bool ready;
+
+    mutex_lock(&kqueue_fifo_lock);
+    ready = !kfifo_is_full(&kqueue_fifo);
+    mutex_unlock(&kqueue_fifo_lock);
+
+    return ready;
+}
 
 static int kqueue_open(struct inode *inode, struct file *file)
 {
@@ -22,10 +47,33 @@ static int kqueue_open(struct inode *inode, struct file *file)
     return 0;
 }
 
+static int kqueue_fasync(int fd, struct file *file, int on)
+{
+    return fasync_helper(fd, file, on, &kqueue_async_queue);
+}
+
 static int kqueue_release(struct inode *inode, struct file *file)
 {
+    kqueue_fasync(-1, file, 0);
     pr_info("kqueue_lab: device released\n");
     return 0;
+}
+
+static __poll_t kqueue_poll(struct file *file, poll_table *wait)
+{
+    __poll_t mask = 0;
+
+    poll_wait(file, &kqueue_read_queue, wait);
+    poll_wait(file, &kqueue_write_queue, wait);
+
+    mutex_lock(&kqueue_fifo_lock);
+    if (!kfifo_is_empty(&kqueue_fifo))
+        mask |= EPOLLIN | EPOLLRDNORM;
+    if (!kfifo_is_full(&kqueue_fifo))
+        mask |= EPOLLOUT | EPOLLWRNORM;
+    mutex_unlock(&kqueue_fifo_lock);
+
+    return mask;
 }
 
 static ssize_t kqueue_read(struct file *file,
@@ -55,7 +103,7 @@ static ssize_t kqueue_read(struct file *file,
 
         ret = wait_event_interruptible(
             kqueue_read_queue,
-            !kfifo_is_empty(&kqueue_fifo));
+            kqueue_fifo_has_data());
         if (ret != 0)
             return ret;
     }
@@ -67,7 +115,8 @@ static ssize_t kqueue_read(struct file *file,
         return ret;
 
     if (copied > 0)
-        wake_up_interruptible(&kqueue_write_queue);
+        wake_up_interruptible_poll(&kqueue_write_queue,
+                                   EPOLLOUT | EPOLLWRNORM);
 
     pr_info("kqueue_lab: read requested=%zu, copied=%u\n",
             count, copied);
@@ -100,7 +149,7 @@ static ssize_t kqueue_write(struct file *file,
 
         ret = wait_event_interruptible(
             kqueue_write_queue,
-            !kfifo_is_full(&kqueue_fifo));
+            kqueue_fifo_has_space());
         if (ret != 0)
             return ret;
     }
@@ -112,7 +161,11 @@ static ssize_t kqueue_write(struct file *file,
         return ret;
 
     if (copied > 0)
-        wake_up_interruptible(&kqueue_read_queue);
+        wake_up_interruptible_poll(&kqueue_read_queue,
+                                   EPOLLIN | EPOLLRDNORM);
+
+    if (copied > 0)
+        kill_fasync(&kqueue_async_queue, SIGIO, POLL_IN);
 
     pr_info("kqueue_lab: write requested=%zu, copied=%u\n",
             count, copied);
@@ -121,8 +174,10 @@ static ssize_t kqueue_write(struct file *file,
 static const struct file_operations kqueue_fops = {
     .owner = THIS_MODULE,
     .open = kqueue_open,
-	.read = kqueue_read,
+    .read = kqueue_read,
     .write = kqueue_write,
+    .poll = kqueue_poll,
+    .fasync = kqueue_fasync,
     .release = kqueue_release,
 };
 
