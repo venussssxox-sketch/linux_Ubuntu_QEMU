@@ -2,7 +2,7 @@
 
 本项目在 Ubuntu x86_64 主机上使用 Buildroot 和 QEMU 构建 ARM64 Linux 实验环境，并实现 `/dev/kqueue_lab` 数据队列字符设备。驱动以 `miscdevice` 注册设备，使用 4096 字节 `kfifo` 保存共享字节流，并逐步实现非阻塞 I/O、阻塞等待、并发保护、poll 就绪通知、错误路径、模块生命周期和 `SIGIO/fasync` 异步通知。
 
-当前所有功能均已使用 Linux 6.12.27 ARM64 QEMU 来宾实际验证。每日学习过程和验证证据记录在 `logs/day04-summary.md` 与 `logs/day05-summary.md`。
+当前所有功能均已使用 Linux 6.12.27 ARM64 QEMU 来宾实际验证。每日学习过程和验证证据按时间记录在 `logs/day01-summary.md` 至 `logs/day05-summary.md`。
 
 ## 当前实现
 
