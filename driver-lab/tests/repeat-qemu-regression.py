@@ -15,7 +15,10 @@ import pexpect
 
 lab = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description=__doc__)
-parser.add_argument('--rounds', type=int, default=10)
+parser.add_argument('--rounds', type=int,
+                    help='number of complete regression rounds (default: 10)')
+parser.add_argument('--duration-hours', type=float,
+                    help='run complete rounds until this test duration is reached')
 parser.add_argument('--timeout', type=int, default=120, help='seconds per round')
 parser.add_argument('--expected-tests', type=int, default=13,
                     help='expected PASS results in each complete round')
@@ -25,9 +28,15 @@ parser.add_argument('--deployment-dir', type=Path,
                     default=lab / 'rootfs-overlay/root')
 parser.add_argument('--label', default='regression')
 args = parser.parse_args()
-if (args.rounds < 1 or args.timeout < 1 or args.expected_tests < 1 or
+if args.rounds is not None and args.duration_hours is not None:
+    parser.error('--rounds and --duration-hours are mutually exclusive')
+if args.rounds is None and args.duration_hours is None:
+    args.rounds = 10
+if ((args.rounds is not None and args.rounds < 1) or
+        (args.duration_hours is not None and args.duration_hours <= 0) or
+        args.timeout < 1 or args.expected_tests < 1 or
         not re.fullmatch(r'[A-Za-z0-9_-]+', args.label)):
-    parser.error('positive rounds/timeout/test count and a simple label required')
+    parser.error('positive duration/rounds/timeout/test count and a simple label required')
 stamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
 out = lab / 'logs' / (stamp + '-' + args.label)
 out.mkdir(exist_ok=False)
@@ -42,6 +51,7 @@ files = sorted(deployment_dir.glob('kqueue_*'))
 files.append(deployment_dir / 'run-kqueue-regression.sh')
 hashes = {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in files if p.is_file()}
 report = {'started_utc': stamp, 'requested_rounds': args.rounds,
+          'requested_duration_hours': args.duration_hours,
           'timeout_seconds': args.timeout, 'expected_tests': args.expected_tests,
           'rounds': [], 'deployed_sha256': hashes,
           'images_dir': str(images_dir),
@@ -52,6 +62,12 @@ report = {'started_utc': stamp, 'requested_rounds': args.rounds,
           'success': False}
 start = time.monotonic()
 child = None
+
+def write_json(path):
+    temporary = path.with_suffix(path.suffix + '.tmp')
+    temporary.write_text(json.dumps(report, indent=2) + '\n')
+    temporary.replace(path)
+
 try:
     with (out/'serial.log').open('w') as serial:
         guest_env = os.environ.copy()
@@ -84,7 +100,16 @@ try:
         # Keep noisy driver messages in dmesg instead of interleaving shell output.
         output, code = command('dmesg -n 4')
         if code: raise RuntimeError('could not set console log level')
-        for number in range(1, args.rounds + 1):
+        test_start = time.monotonic()
+        deadline = (test_start + args.duration_hours * 3600
+                    if args.duration_hours is not None else None)
+        number = 0
+        while True:
+            if args.rounds is not None and number >= args.rounds:
+                break
+            if deadline is not None and number > 0 and time.monotonic() >= deadline:
+                break
+            number += 1
             tick = time.monotonic()
             output, code = command('/root/run-kqueue-regression.sh', args.timeout)
             (out/f'round-{number:03}.log').write_text(output)
@@ -96,7 +121,10 @@ try:
             report['rounds'].append({'round': number, 'exit_code': code, 'passed': passed,
                                      'failed': failed, 'success': ok,
                                      'elapsed_seconds': round(time.monotonic()-tick, 3)})
-            print(f'round {number}/{args.rounds}: {"PASS" if ok else "FAIL"}', flush=True)
+            report['test_elapsed_seconds'] = round(time.monotonic() - test_start, 3)
+            write_json(out / 'checkpoint.json')
+            target = str(args.rounds) if args.rounds is not None else f'{args.duration_hours}h'
+            print(f'round {number}/{target}: {"PASS" if ok else "FAIL"}', flush=True)
             if not ok: raise RuntimeError(f'round {number} failed')
         output, code = command("if grep -q '^kqueue_lab ' /proc/modules; then exit_code=1; else exit_code=0; fi; test \"$exit_code\" = 0")
         if code: raise RuntimeError('module still loaded after regression')
@@ -115,6 +143,6 @@ except Exception as exc:
 finally:
     if child is not None and child.isalive(): child.terminate(force=True)
     report['elapsed_seconds'] = round(time.monotonic()-start, 3)
-    (out/'summary.json').write_text(json.dumps(report, indent=2) + '\n')
+    write_json(out / 'summary.json')
     print(out, flush=True)
 raise SystemExit(0 if report['success'] else 1)

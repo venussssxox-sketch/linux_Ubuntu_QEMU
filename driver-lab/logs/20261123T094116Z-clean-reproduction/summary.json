@@ -1,0 +1,61 @@
+{
+  "started_utc": "20261123T094116Z",
+  "requested_rounds": 1,
+  "requested_duration_hours": null,
+  "timeout_seconds": 120,
+  "expected_tests": 13,
+  "rounds": [
+    {
+      "round": 1,
+      "exit_code": 0,
+      "passed": [
+        "13"
+      ],
+      "failed": [
+        "0"
+      ],
+      "success": true,
+      "elapsed_seconds": 9.733
+    }
+  ],
+  "deployed_sha256": {
+    "kqueue_blocking_test": "fc3bb3895813b5c901ed3aca69f73ca5601272e7a5ccd58b875ba726f943922a",
+    "kqueue_blocking_write_test": "256c9ae8ad0afa21a9c79500ca6f47b02b81bd70c01ef1887f1b628ebffbfa46",
+    "kqueue_error_test": "26abde5faf5b983d0e576bf5c54026e3b643f1514434a766fcbc4cba2a918e88",
+    "kqueue_hold_open_test": "25c111b506a78c17918af8fb11383121e1cee57236686e41f240e1154c32251d",
+    "kqueue_ioctl_test": "de4ae4112c1fa33042d86b1985c31feee579e41696ba0b17efc6f765f37c4364",
+    "kqueue_lab.ko": "35716f1c8403d89d0e0e858cc7f9ea04b33551af62d947c3d834f24671e0fdea",
+    "kqueue_multi_reader_test": "6d6a61bae434dc84fc77ad1650c49510724cc337f543b52e9d93bd72645b7da1",
+    "kqueue_partial_fault_test": "e467628ee36a0676d3b7b4d3d56db2fc0e411f3bd8fba1199a1267fa2fb4457b",
+    "kqueue_partial_wakeup_test": "2e6bfaf8fc6c0155b547450cdfb06d72744153df1a948cba2b9dc3f61e84ccdb",
+    "kqueue_poll_test": "3459d2bc15c937e49f62c6378360263b6d752ab5433a1eafdeb54e312d2750b2",
+    "kqueue_producer_consumer_test": "6abbb9a55d23d95e4eb6f2270cd669edb5b92c13cafb8489c8dcd1a60b4a6c13",
+    "kqueue_sigio_test": "d699963b3e50a9e744b67743859fa10af0ee60960f5d78c378f7244b0669b478",
+    "kqueue_signal_interrupt_test": "4c6be9bdb04b5debacedc37ab45ebe9816ebf124dce5be5fe108a8c5cd8536ff",
+    "kqueue_test": "c3ff73212d7f4d3d4124d449f06a26d4e391f7d63a279c50ada226bcb46dadeb",
+    "run-kqueue-regression.sh": "b6cc50187c47a9f66d211e7ebb580455faca2b9e80cad351fe8ff32971e199b7"
+  },
+  "images_dir": "/home/zhaojinxin/driver-lab-clean-repro-174ffad/output/images",
+  "deployment_dir": "/home/zhaojinxin/driver-lab-clean-repro-174ffad/rootfs-overlay/root",
+  "git_head": "174ffad8a4cfacc4327d4b7d871416505a93b83d",
+  "source_sha256": {
+    "drivers/kqueue_lab/kqueue_lab.c": "5859f2a5429e6597b1079e3a4dba27c6f3ad63b01801bd99008ce9fae1c5271f",
+    "userspace/kqueue_blocking_test.c": "7b26bbfcdf60ae9e1b5482c282128081f56f144a73ad1790ff57fc9c5323dc4e",
+    "userspace/kqueue_blocking_write_test.c": "4549d0c24c68e7ec4d215798ca6416b46a19fb5adbd0250e9ed7923149911271",
+    "userspace/kqueue_error_test.c": "064a53a5d5783f16150aecea75f675f987f0f315f5b6d36544019051ea1e7c2a",
+    "userspace/kqueue_hold_open_test.c": "6dc116219c818b101a609a4e5c5b40aa270dd8d966417a3dc61bb26b3c5bc78a",
+    "userspace/kqueue_ioctl_test.c": "3f3d09acab56ecfae2e4c6f8d6fbbc12a427e37f65352683dcb15b261be15e62",
+    "userspace/kqueue_multi_reader_test.c": "bf7229fd22c5b4486f84eeb44e11c9274d71c18361e4cbaedd1d383b199b57dd",
+    "userspace/kqueue_partial_fault_test.c": "6a52957ec56f0b365da049c5f65391de47579f2cea10c31cc31d6641878d3f0b",
+    "userspace/kqueue_partial_wakeup_test.c": "f1f0c371b99818c51ce1d7f3e2362cecdf9a93c0efa90e30f55b9bae8293a532",
+    "userspace/kqueue_poll_test.c": "b7cdcd89becf2047a90305c24ccc4671ea65703e63fd0f1b0b2b284576e2be33",
+    "userspace/kqueue_producer_consumer_test.c": "f1885d23b6b588cefeb7f6ecdea5e5082fa1c72c66f9c86fa8d4df491b2b8c5a",
+    "userspace/kqueue_sigio_test.c": "2cd568b29d60e247f082300817d9b732376c88f22cd4980f40abd29e893fad18",
+    "userspace/kqueue_signal_interrupt_test.c": "7571efeb6da7f27ce8120532b0fcb90d86c8af4aaaf78d9d66fe010ca005526c",
+    "userspace/kqueue_test.c": "222950c2ab9b9a4d50198557ba79956f0a0c88243f9019f696d6b1e484b48893"
+  },
+  "success": true,
+  "guest_environment": "Linux buildroot 6.12.27 #1 SMP Mon Nov 23 17:41:00 CST 2026 aarch64 GNU/Linux",
+  "test_elapsed_seconds": 9.733,
+  "elapsed_seconds": 16.692
+}

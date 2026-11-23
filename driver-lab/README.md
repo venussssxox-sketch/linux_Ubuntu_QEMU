@@ -2,7 +2,7 @@
 
 本项目在 Ubuntu x86_64 主机上使用 Buildroot 和 QEMU 构建 ARM64 Linux 实验环境，并实现 `/dev/kqueue_lab` 数据队列字符设备。驱动以 `miscdevice` 注册设备，使用 4096 字节 `kfifo` 保存共享字节流，并逐步实现非阻塞 I/O、阻塞等待、并发保护、poll 就绪通知、错误路径、模块生命周期、`SIGIO/fasync` 异步通知和 ioctl 状态查询。
 
-当前所有功能均已使用 Linux 6.12.27 ARM64 QEMU 来宾实际验证。每日学习过程和验证证据按时间记录在 `logs/day01-summary.md` 至 `logs/day08-summary.md`。第 8 天完成锁与唤醒路径复查、部分用户拷贝故障修复及 10 轮有界重复回归；长期稳定性测试及干净环境复现仍待完成。
+当前所有功能均已使用 Linux 6.12.27 ARM64 QEMU 来宾实际验证。每日学习过程和验证证据按时间记录在 `logs/day01-summary.md` 至 `logs/day08-summary.md`。第 8 天完成锁与唤醒路径复查、部分用户拷贝故障修复及 10 轮有界重复回归；后续补充了部分拷贝唤醒、多读者和反复打开关闭专项测试。约 8 小时稳定性测试尚未执行。
 
 ## 当前实现
 
@@ -14,7 +14,7 @@
 - `.fasync`：用户设置 `F_SETOWN` 与 `O_ASYNC` 后，成功写入触发 `SIGIO/POLL_IN`。
 - `.unlocked_ioctl`：`KQUEUE_IOC_GET_INFO` 返回 FIFO 总容量、当前数据量和剩余空间，不消费队列数据。
 - 模块生命周期：打开的设备文件持有模块引用，关闭后才能安全卸载。
-- 用户态测试：覆盖基本读写、阻塞读写、信号中断、poll、生产者/消费者、`EFAULT`、模块引用、`SIGIO` 和 ioctl 状态查询。
+- 用户态测试：覆盖基本读写、阻塞读写、信号中断、poll、生产者/消费者、多个读者、反复打开关闭、`EFAULT`、部分用户拷贝及其唤醒、模块引用、`SIGIO` 和 ioctl 状态查询。
 - 自动化回归：来宾中的 `run-kqueue-regression.sh` 为每项普通测试重新加载模块，并单独验证设备打开期间拒绝卸载、关闭后允许卸载的生命周期行为。
 
 ## 主要目录
@@ -27,7 +27,7 @@ driver-lab/
 ├── env-check/                # 最小环境验收模块源码
 ├── logs/                     # 每日总结、实验说明和实际串口日志
 ├── rootfs-overlay/           # QEMU 来宾部署目录（生成的二进制不纳入 Git）
-├── buildroot-config.initial  # Buildroot 配置备份
+├── configs/                  # 内核调试配置与可移植 Buildroot defconfig
 ├── build-envcheck.sh         # 环境模块构建脚本
 ├── start-qemu.sh             # ARM64 QEMU 启动脚本
 └── verify-qemu.py            # 环境自动验收脚本
@@ -175,7 +175,7 @@ buildroot-2025.02.19/output/host/bin/aarch64-buildroot-linux-gnu-gcc \
 printf 'regression_exit=%s\n' "$?"
 ```
 
-脚本当前依次运行 10 个普通功能测试（包括部分用户拷贝故障），加上独立模块生命周期测试，共 11 项。每项普通测试前重新加载模块、结束后卸载模块，保证 FIFO 状态相互隔离；模块生命周期测试在后台保持设备打开，确认第一次卸载被拒绝，关闭设备后第二次卸载成功。2026-11-18 的 ARM64 QEMU 实测汇总为 `passed: 10`、`failed: 0`、退出码 0。
+脚本当前依次运行 12 个普通功能测试（包括部分用户拷贝故障、部分拷贝唤醒、多个读者和反复打开关闭），加上独立模块生命周期测试，共 13 项。每项普通测试前重新加载模块、结束后卸载模块，保证 FIFO 状态相互隔离；模块生命周期测试在后台保持设备打开，确认第一次卸载被拒绝，关闭设备后第二次卸载成功。
 
 也可以单独运行各程序定位失败：
 
@@ -213,11 +213,37 @@ poweroff
 
 ```bash
 bash /home/zhaojinxin/linux_Ubuntu/driver-lab/tests/build-kqueue.sh
-python3 /home/zhaojinxin/linux_Ubuntu/driver-lab/tests/repeat-qemu-regression.py --rounds 10 --timeout 120 --label regression
+python3 /home/zhaojinxin/linux_Ubuntu/driver-lab/tests/repeat-qemu-regression.py --rounds 10 --expected-tests 13 --timeout 120 --label regression
 ```
 
-Python 编排依赖主机 pexpect；`--rounds` 是完整回归轮数，`--timeout` 是每轮最长等待秒数，`--label` 是日志目录标签。脚本启动自己的快照虚拟机，核对镜像与 overlay 中模块及测试文件的 SHA-256，保存串口、每轮输出和 JSON 汇总，检查模块卸载、最终内核日志和正常关机。失败或超时返回非零并终止自己的虚拟机。结果存于 `logs/<UTC时间>-<标签>/`，同名目录不会覆盖。
+Python 编排依赖主机 pexpect；`--rounds` 是完整回归轮数，`--duration-hours` 用于按真实时长完成的完整轮次，`--timeout` 是每轮最长等待秒数，`--label` 是日志目录标签。脚本启动自己的快照虚拟机，核对镜像与 overlay 中模块及测试文件的 SHA-256，保存串口、每轮输出、检查点和 JSON 汇总，检查模块卸载、最终内核日志和正常关机。失败或超时返回非零并终止自己的虚拟机。结果存于 `logs/<UTC时间>-<标签>/`，同名目录不会覆盖。
 
-2026-11-23 实测：修复前原有 10 项通过、新增部分故障项失败；修复后 10 轮 × 11 项全部通过，完整会话 80.275 秒。部分用户拷贝只要已经传输了字节，就返回实际字节数并通知等待者；完全未传输才返回拷贝错误。
+2026-11-23 实测：修复前原有 10 项通过、新增部分故障项失败；修复后 10 轮 × 11 项全部通过，完整会话 80.275 秒。之后补充的 13 项专项回归也通过。部分用户拷贝只要已经传输了字节，就返回实际字节数并通知等待者；完全未传输才返回拷贝错误。
 
-证据及边界见 `logs/day08-summary.md` 和 `logs/day08-code-review.md`。这是 QEMU 功能重复回归，不是 8 小时稳定性测试，也不是实物性能结论。
+证据及边界见 `logs/day08-summary.md`、`logs/day08-code-review.md`、`docs/interface.md` 和 `docs/known-limitations.md`。这是 QEMU 功能重复回归，不是 8 小时稳定性测试，也不是实物性能结论。
+
+## 从空输出目录复现
+
+以下入口会校验固定的 Buildroot 2025.02.19 源码归档，在新的工作区解压源码、生成新的 Buildroot 输出目录、重新构建工具链/内核/rootfs，并用新镜像执行一次 13 项回归。可传入已有且经过 Buildroot 哈希校验的下载缓存以避免重复下载；它不会复用任何编译产物。
+
+```bash
+cd /home/zhaojinxin/linux_Ubuntu/driver-lab
+bash tests/clean-reproduce.sh \
+  --workspace /home/zhaojinxin/driver-lab-clean-repro \
+  --download-cache /home/zhaojinxin/linux_Ubuntu/driver-lab/buildroot-2025.02.19/dl
+```
+
+`--workspace` 必须是不存在的目录，避免把历史构建输出混入证据。构建日志、生成的最小配置、哈希和结果摘要保存在该工作区；回归证据仍由项目回归器写入 `logs/`。
+
+## 8 小时稳定性测试
+
+工具已经支持检查点和实际时长，但本仓库尚未执行该测试。准备开始时运行：
+
+```bash
+cd /home/zhaojinxin/linux_Ubuntu/driver-lab
+python3 tests/repeat-qemu-regression.py \
+  --duration-hours 8 --expected-tests 13 --timeout 120 \
+  --label stability-8h
+```
+
+每轮结束会原子更新结果目录中的 `checkpoint.json`；正常完成后才会写 `summary.json` 的 `success: true`。完成 8 小时前不得把项目表述为已完成长期稳定性验证。
