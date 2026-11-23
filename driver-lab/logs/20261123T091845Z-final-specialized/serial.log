@@ -1,0 +1,2994 @@
+Booting Linux on physical CPU 0x0000000000 [0x410fd034]
+Linux version 6.12.27 (zhaojinxin@zhaojinxin-ASUS-TUF-Gaming-F16-FX607JVR-FX607JVR) (aarch64-buildroot-linux-gnu-gcc.br_real (Buildroot -g05a2bd3) 13.4.0, GNU ld (GNU Binutils) 2.43.1) #2 SMP Wed Nov 18 20:04:44 CST 2026
+Machine model: linux,dummy-virt
+efi: UEFI not found.
+OF: reserved mem: Reserved memory: No reserved-memory node in the DT
+Zone ranges:
+  DMA      [mem 0x0000000040000000-0x000000005fffffff]
+  DMA32    empty
+  Normal   empty
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x0000000040000000-0x000000005fffffff]
+Initmem setup node 0 [mem 0x0000000040000000-0x000000005fffffff]
+psci: probing for conduit method from DT.
+psci: PSCIv0.2 detected in firmware.
+psci: Using standard PSCI v0.2 function IDs
+psci: Trusted OS migration not required
+percpu: Embedded 20 pages/cpu s44248 r8192 d29480 u81920
+Detected VIPT I-cache on CPU0
+CPU features: detected: ARM erratum 843419
+CPU features: detected: ARM erratum 845719
+alternatives: applying boot alternatives
+Kernel command line: rootwait root=/dev/vda console=ttyAMA0
+Dentry cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+Inode-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+Built 1 zonelists, mobility grouping on.  Total pages: 131072
+mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+software IO TLB: SWIOTLB bounce buffer size adjusted to 0MB
+software IO TLB: area num 2.
+software IO TLB: mapped [mem 0x000000005f540000-0x000000005f5c0000] (0MB)
+SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+rcu: Hierarchical RCU implementation.
+rcu: 	RCU event tracing is enabled.
+rcu: 	RCU restricting CPUs from NR_CPUS=512 to nr_cpu_ids=2.
+rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+Root IRQ handler: gic_handle_irq
+GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
+rcu: srcu_init: Setting srcu_struct sizes based on contention.
+arch_timer: cp15 timer(s) running at 62.50MHz (virt).
+clocksource: arch_sys_counter: mask: 0x1ffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
+sched_clock: 57 bits at 63MHz, resolution 16ns, wraps every 4398046511096ns
+Console: colour dummy device 80x25
+Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=250000)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 1024 (order: 1, 8192 bytes, linear)
+Mountpoint-cache hash table entries: 1024 (order: 1, 8192 bytes, linear)
+cacheinfo: Unable to detect cache hierarchy for CPU 0
+rcu: Hierarchical SRCU implementation.
+rcu: 	Max phase no-delay instances is 1000.
+Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+EFI services will not be available.
+smp: Bringing up secondary CPUs ...
+Detected VIPT I-cache on CPU1
+CPU1: Booted secondary processor 0x0000000001 [0x410fd034]
+smp: Brought up 1 node, 2 CPUs
+SMP: Total of 2 processors activated.
+CPU: All CPU(s) started at EL1
+CPU features: detected: 32-bit EL0 Support
+CPU features: detected: CRC32 instructions
+alternatives: applying system-wide alternatives
+Memory: 497316K/524288K available (8000K kernel code, 882K rwdata, 1960K rodata, 1152K init, 576K bss, 24544K reserved, 0K cma-reserved)
+devtmpfs: initialized
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+29568 pages in range for non-PLT usage
+521088 pages in range for PLT usage
+DMI not present or invalid.
+NET: Registered PF_NETLINK/PF_ROUTE protocol family
+DMA: preallocated 128 KiB GFP_KERNEL pool for atomic allocations
+DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+thermal_sys: Registered thermal governor 'step_wise'
+cpuidle: using governor menu
+hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+ASID allocator initialised with 65536 entries
+Serial: AMBA PL011 UART driver
+9000000.pl011: ttyAMA0 at MMIO 0x9000000 (irq = 13, base_baud = 0) is a PL011 rev1
+printk: legacy console [ttyAMA0] enabled
+ACPI: Interpreter disabled.
+iommu: Default domain type: Translated
+iommu: DMA domain TLB invalidation policy: strict mode
+SCSI subsystem initialized
+pps_core: LinuxPPS API ver. 1 registered
+pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+PTP clock support registered
+vgaarb: loaded
+clocksource: Switched to clocksource arch_sys_counter
+pnp: PnP ACPI: disabled
+NET: Registered PF_INET protocol family
+IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+tcp_listen_portaddr_hash hash table entries: 256 (order: 0, 4096 bytes, linear)
+Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+TCP established hash table entries: 4096 (order: 3, 32768 bytes, linear)
+TCP bind hash table entries: 4096 (order: 5, 131072 bytes, linear)
+TCP: Hash tables configured (established 4096 bind 4096)
+UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+NET: Registered PF_UNIX/PF_LOCAL protocol family
+PCI: CLS 0 bytes, default 64
+workingset: timestamp_bits=46 max_order=17 bucket_order=0
+fuse: init (API version 7.41)
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+io scheduler mq-deadline registered
+io scheduler kyber registered
+pci-host-generic 4010000000.pcie: host bridge /pcie@10000000 ranges:
+pci-host-generic 4010000000.pcie:       IO 0x003eff0000..0x003effffff -> 0x0000000000
+pci-host-generic 4010000000.pcie:      MEM 0x0010000000..0x003efeffff -> 0x0010000000
+pci-host-generic 4010000000.pcie:      MEM 0x8000000000..0xffffffffff -> 0x8000000000
+pci-host-generic 4010000000.pcie: Memory resource size exceeds max for 32 bits
+pci-host-generic 4010000000.pcie: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
+pci-host-generic 4010000000.pcie: PCI host bridge to bus 0000:00
+pci_bus 0000:00: root bus resource [bus 00-ff]
+pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff]
+pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff]
+pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000 conventional PCI endpoint
+pci_bus 0000:00: resource 4 [io  0x0000-0xffff]
+pci_bus 0000:00: resource 5 [mem 0x10000000-0x3efeffff]
+pci_bus 0000:00: resource 6 [mem 0x8000000000-0xffffffffff]
+virtio_blk virtio0: 1/0/0 default/read/poll queues
+virtio_blk virtio0: [vda] 122880 512-byte logical blocks (62.9 MB/60.0 MiB)
+rtc-pl031 9010000.pl031: registered as rtc0
+rtc-pl031 9010000.pl031: setting system clock to 2026-11-23T09:18:45 UTC (1795425525)
+hw perfevents: enabled with armv8_pmuv3 PMU driver, 5 (0,8000000f) counters available
+NET: Registered PF_INET6 protocol family
+Segment Routing with IPv6
+In-situ OAM (IOAM) with IPv6
+sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+NET: Registered PF_PACKET protocol family
+NET: Registered PF_KEY protocol family
+NET: Registered PF_VSOCK protocol family
+registered taskstats version 1
+clk: Disabling unused clocks
+PM: genpd: Disabling unused power domains
+EXT4-fs (vda): orphan cleanup on readonly fs
+EXT4-fs (vda): mounted filesystem 377f4e0a-d159-4590-92e4-84593991aac2 ro with ordered data mode. Quota mode: disabled.
+VFS: Mounted root (ext4 filesystem) readonly on device 254:0.
+devtmpfs: mounted
+Freeing unused kernel memory: 1152K
+Run /sbin/init as init process
+EXT4-fs (vda): re-mounted 377f4e0a-d159-4590-92e4-84593991aac2 r/w. Quota mode: disabled.
+Saving 256 bits of non-creditable seed for next boot
+Starting syslogd: OK
+Starting klogd: OK
+Running sysctl: OK
+Starting network: udhcpc: started, v1.37.0
+udhcpc: broadcasting discover
+udhcpc: broadcasting select for 10.0.2.15, server 10.0.2.2
+udhcpc: lease of 10.0.2.15 obtained from 10.0.2.2, lease time 86400
+deleting routers
+adding dns 10.0.2.3
+OK
+Starting crond: OK
+
+Welcome to Buildroot
+buildroot login: root
+# stty -echo; export PS1='LABCHECK> '
+LABCHECK> Linux buildroot 6.12.27 #2 SMP Wed Nov 18 20:04:44 CST 2026 aarch64 GNU/Linux
+
+DONE_c16c90be870c426f93ffda09695b192b:0
+LABCHECK> e5be736840ae1cdc1ab0882a1a20b63bf816ec5c15579664af17eb50071d41f9  /root/kqueue_blocking_test
+
+DONE_f956c0f699374d57b882a607728b48d0:0
+LABCHECK> 1622162c47cc96a02ac97ba1b9776306f7735408c07392b998e5bd7389da0ff1  /root/kqueue_blocking_write_test
+
+DONE_ab66dd3bc1dc4b44bf5d3defdb97c5e7:0
+LABCHECK> 2e1db7690b1f5d09b169278cfbcb7b6d259395a22a5a026ffbb98a0eb82666d3  /root/kqueue_error_test
+
+DONE_0abe16a1bd6b49faa539bc7589031a79:0
+LABCHECK> bf338143e8c72f75fd266a9f4c33a210c2dccde788b76b0cde8b3321b8e19e57  /root/kqueue_hold_open_test
+
+DONE_dbad871fa81546f3ad688a38956ca9a5:0
+LABCHECK> b415dfd6e522614ea05503bd8e024e3c763b0be9cafa8d9397fa471afde8eda7  /root/kqueue_ioctl_test
+
+DONE_482e829d0f794476a841a20a3724d5eb:0
+LABCHECK> 3e25096bad7526c881ac84f848705b9be5325a4ce69e1920f99088cf0e51d134  /root/kqueue_lab.ko
+
+DONE_142cecef13774c68a2c1895cbf35af6f:0
+LABCHECK> 8d7ec6471f28912f6ff8b53d4f7f881a34dc48c21a0f67cd99284c0d7315348e  /root/kqueue_multi_reader_test
+
+DONE_16f6baeeafaa40a4aa8891236596e921:0
+LABCHECK> 20f79057d8f7249b0d3456239dc9541d1827c688862525be4432ac2dae3625f6  /root/kqueue_partial_fault_test
+
+DONE_c8e17366f2854258ba4ca77fd29f5bda:0
+LABCHECK> 229bfa2250506c9e16214735e637b8c71dea6fa78b3f9234baab5bcb58627db0  /root/kqueue_partial_wakeup_test
+
+DONE_6665e3d416d44c1da890c85a1b3ddc60:0
+LABCHECK> cc2890e92a8ce68ed78b67c10a2d8fac9e14c06e8ac1ab8687c9763764bb44b4  /root/kqueue_poll_test
+
+DONE_7cc4b5daf11c4b60903d12e9c1d0631d:0
+LABCHECK> 6340cb6bad865e1afea979768d7f7a51da67defbb87d9cb22bb872a387674485  /root/kqueue_producer_consumer_test
+
+DONE_726c2d7ae8674c56bc4b70600ad90ddf:0
+LABCHECK> 98548563ae2c7f5cb477b77fc7d68fa1b5c78e2513f14d56acefe9b42f9b9fae  /root/kqueue_sigio_test
+
+DONE_8a9dfe3d27a84a34ab9db3f93010a386:0
+LABCHECK> 343820d6fb9ef16bc388e786c4d4822a04d8178f011e7c1b6d388b04d18f1c32  /root/kqueue_signal_interrupt_test
+
+DONE_9ba68f533ff84b12a57b2cb00b056950:0
+LABCHECK> ad723a78b502eb9f1172d744c41488bde6099b423a487dff9920a429133eb665  /root/kqueue_test
+
+DONE_671171d92b4c4c18960de001fe5b0357:0
+LABCHECK> b6cc50187c47a9f66d211e7ebb580455faca2b9e80cad351fe8ff32971e199b7  /root/run-kqueue-regression.sh
+
+DONE_7f7fadf97a554b18b816f855653d304a:0
+LABCHECK> 
+DONE_231928d0792c42e78fc02d3760122bcd:0
+LABCHECK> 
+=== RUN: basic read/write ===
+PASS: zero-length write returned 0
+PASS: zero-length read returned 0
+PASS: wrote and read back 3 bytes: abc
+PASS: empty queue returned EAGAIN
+RESULT: PASS - basic read/write
+
+=== RUN: ioctl state and errors ===
+unknown command: ENOTTY PASS
+bad address: EFAULT PASS
+empty: capacity=4096 used=0 available=4096
+after write: capacity=4096 used=3 available=4093
+second query: capacity=4096 used=3 available=4093
+after read: capacity=4096 used=1 available=4095
+kqueue ioctl test: PASS
+RESULT: PASS - ioctl state and errors
+
+=== RUN: blocking read ===
+PASS: child remained blocked while FIFO was empty
+PASS: child read 3 bytes after wake-up: abc
+PASS: parent write woke the blocked child
+RESULT: PASS - blocking read
+
+=== RUN: blocking write ===
+PASS: child remained blocked while FIFO was full
+PASS: child wrote 3 bytes after wake-up: XYZ
+PASS: parent read created space and woke the child
+RESULT: PASS - blocking write
+
+=== RUN: signal interruption ===
+PASS: child remained blocked before SIGUSR1
+PASS: blocked read returned EINTR after SIGUSR1
+PASS: parent SIGUSR1 interrupted the blocked child
+RESULT: PASS - signal interruption
+
+=== RUN: poll readiness ===
+PASS: empty FIFO revents=0x4
+PASS: non-empty, non-full FIFO revents=0x5
+PASS: full FIFO revents=0x1
+PASS: FIFO after one-byte read revents=0x5
+PASS: drained FIFO revents=0x4
+PASS: empty FIFO POLLIN wait timed out
+PASS: POLLIN wait woke after another process wrote Z
+PASS: POLLOUT wait woke after another process read one byte
+RESULT: PASS - poll readiness
+
+=== RUN: producer and consumer ===
+PASS: one producer and one consumer preserved 1024-byte order
+PASS: two producers delivered 6000 A bytes and 6000 B bytes
+RESULT: PASS - producer and consumer
+
+=== RUN: invalid user buffers ===
+PASS: invalid user buffers returned EFAULT without consuming data
+RESULT: PASS - invalid user buffers
+
+=== RUN: partial user copy faults ===
+partial fault write: returned=1 used=1 expected=1/1
+partial fault read: returned=1 used=1 expected=1/1
+PASS: partial user faults report transferred bytes and preserve FIFO state
+RESULT: PASS - partial user copy faults
+
+=== RUN: partial-copy wakeups ===
+PASS: partial write woke a blocked reader
+PASS: partial read woke a blocked writer
+RESULT: PASS - partial-copy wakeups
+
+=== RUN: multi-reader and repeated open/close ===
+PASS: 1000 repeated open/close operations
+PASS: 4 readers consumed 16384 verified bytes
+RESULT: PASS - multi-reader and repeated open/close
+
+=== RUN: SIGIO notification ===
+PASS: SIGIO reported newly readable data and read returned Z
+RESULT: PASS - SIGIO notification
+
+=== RUN: module lifecycle ===
+PASS: unload refused while device was open
+PASS: module unloaded after device close
+RESULT: PASS - module lifecycle
+
+=== REGRESSION SUMMARY ===
+passed: 13
+failed: 0
+
+DONE_2d8e4729564648ad9749e60f93b8a5af:0
+LABCHECK> 
+DONE_e471f1ca36254d6594bd532c6224d349:0
+LABCHECK> Booting Linux on physical CPU 0x0000000000 [0x410fd034]
+Linux version 6.12.27 (zhaojinxin@zhaojinxin-ASUS-TUF-Gaming-F16-FX607JVR-FX607JVR) (aarch64-buildroot-linux-gnu-gcc.br_real (Buildroot -g05a2bd3) 13.4.0, GNU ld (GNU Binutils) 2.43.1) #2 SMP Wed Nov 18 20:04:44 CST 2026
+Machine model: linux,dummy-virt
+efi: UEFI not found.
+OF: reserved mem: Reserved memory: No reserved-memory node in the DT
+Zone ranges:
+  DMA      [mem 0x0000000040000000-0x000000005fffffff]
+  DMA32    empty
+  Normal   empty
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x0000000040000000-0x000000005fffffff]
+Initmem setup node 0 [mem 0x0000000040000000-0x000000005fffffff]
+psci: probing for conduit method from DT.
+psci: PSCIv0.2 detected in firmware.
+psci: Using standard PSCI v0.2 function IDs
+psci: Trusted OS migration not required
+percpu: Embedded 20 pages/cpu s44248 r8192 d29480 u81920
+pcpu-alloc: s44248 r8192 d29480 u81920 alloc=20*4096
+pcpu-alloc: [0] 0 [0] 1 
+Detected VIPT I-cache on CPU0
+CPU features: detected: ARM erratum 843419
+CPU features: detected: ARM erratum 845719
+alternatives: applying boot alternatives
+Kernel command line: rootwait root=/dev/vda console=ttyAMA0
+Dentry cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+Inode-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+Built 1 zonelists, mobility grouping on.  Total pages: 131072
+mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+software IO TLB: SWIOTLB bounce buffer size adjusted to 0MB
+software IO TLB: area num 2.
+software IO TLB: mapped [mem 0x000000005f540000-0x000000005f5c0000] (0MB)
+SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+rcu: Hierarchical RCU implementation.
+rcu: 	RCU event tracing is enabled.
+rcu: 	RCU restricting CPUs from NR_CPUS=512 to nr_cpu_ids=2.
+rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+Root IRQ handler: gic_handle_irq
+GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
+rcu: srcu_init: Setting srcu_struct sizes based on contention.
+arch_timer: cp15 timer(s) running at 62.50MHz (virt).
+clocksource: arch_sys_counter: mask: 0x1ffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
+sched_clock: 57 bits at 63MHz, resolution 16ns, wraps every 4398046511096ns
+Console: colour dummy device 80x25
+Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=250000)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 1024 (order: 1, 8192 bytes, linear)
+Mountpoint-cache hash table entries: 1024 (order: 1, 8192 bytes, linear)
+cacheinfo: Unable to detect cache hierarchy for CPU 0
+rcu: Hierarchical SRCU implementation.
+rcu: 	Max phase no-delay instances is 1000.
+Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+EFI services will not be available.
+smp: Bringing up secondary CPUs ...
+Detected VIPT I-cache on CPU1
+CPU1: Booted secondary processor 0x0000000001 [0x410fd034]
+smp: Brought up 1 node, 2 CPUs
+SMP: Total of 2 processors activated.
+CPU: All CPU(s) started at EL1
+CPU features: detected: 32-bit EL0 Support
+CPU features: detected: CRC32 instructions
+alternatives: applying system-wide alternatives
+Memory: 497316K/524288K available (8000K kernel code, 882K rwdata, 1960K rodata, 1152K init, 576K bss, 24544K reserved, 0K cma-reserved)
+devtmpfs: initialized
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+29568 pages in range for non-PLT usage
+521088 pages in range for PLT usage
+DMI not present or invalid.
+NET: Registered PF_NETLINK/PF_ROUTE protocol family
+DMA: preallocated 128 KiB GFP_KERNEL pool for atomic allocations
+DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+thermal_sys: Registered thermal governor 'step_wise'
+cpuidle: using governor menu
+hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+ASID allocator initialised with 65536 entries
+Serial: AMBA PL011 UART driver
+9000000.pl011: ttyAMA0 at MMIO 0x9000000 (irq = 13, base_baud = 0) is a PL011 rev1
+printk: legacy console [ttyAMA0] enabled
+ACPI: Interpreter disabled.
+iommu: Default domain type: Translated
+iommu: DMA domain TLB invalidation policy: strict mode
+SCSI subsystem initialized
+libata version 3.00 loaded.
+pps_core: LinuxPPS API ver. 1 registered
+pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+PTP clock support registered
+vgaarb: loaded
+clocksource: Switched to clocksource arch_sys_counter
+pnp: PnP ACPI: disabled
+NET: Registered PF_INET protocol family
+IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+tcp_listen_portaddr_hash hash table entries: 256 (order: 0, 4096 bytes, linear)
+Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+TCP established hash table entries: 4096 (order: 3, 32768 bytes, linear)
+TCP bind hash table entries: 4096 (order: 5, 131072 bytes, linear)
+TCP: Hash tables configured (established 4096 bind 4096)
+UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+NET: Registered PF_UNIX/PF_LOCAL protocol family
+PCI: CLS 0 bytes, default 64
+workingset: timestamp_bits=46 max_order=17 bucket_order=0
+fuse: init (API version 7.41)
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+io scheduler mq-deadline registered
+io scheduler kyber registered
+pci-host-generic 4010000000.pcie: host bridge /pcie@10000000 ranges:
+pci-host-generic 4010000000.pcie:       IO 0x003eff0000..0x003effffff -> 0x0000000000
+pci-host-generic 4010000000.pcie:      MEM 0x0010000000..0x003efeffff -> 0x0010000000
+pci-host-generic 4010000000.pcie:      MEM 0x8000000000..0xffffffffff -> 0x8000000000
+pci-host-generic 4010000000.pcie: Memory resource size exceeds max for 32 bits
+pci-host-generic 4010000000.pcie: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
+pci-host-generic 4010000000.pcie: PCI host bridge to bus 0000:00
+pci_bus 0000:00: root bus resource [bus 00-ff]
+pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff]
+pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff]
+pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000 conventional PCI endpoint
+pci_bus 0000:00: resource 4 [io  0x0000-0xffff]
+pci_bus 0000:00: resource 5 [mem 0x10000000-0x3efeffff]
+pci_bus 0000:00: resource 6 [mem 0x8000000000-0xffffffffff]
+virtio_blk virtio0: 1/0/0 default/read/poll queues
+virtio_blk virtio0: [vda] 122880 512-byte logical blocks (62.9 MB/60.0 MiB)
+rtc-pl031 9010000.pl031: registered as rtc0
+rtc-pl031 9010000.pl031: setting system clock to 2026-11-23T09:18:45 UTC (1795425525)
+hw perfevents: enabled with armv8_pmuv3 PMU driver, 5 (0,8000000f) counters available
+NET: Registered PF_INET6 protocol family
+Segment Routing with IPv6
+In-situ OAM (IOAM) with IPv6
+sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+NET: Registered PF_PACKET protocol family
+NET: Registered PF_KEY protocol family
+NET: Registered PF_VSOCK protocol family
+registered taskstats version 1
+clk: Disabling unused clocks
+PM: genpd: Disabling unused power domains
+EXT4-fs (vda): orphan cleanup on readonly fs
+EXT4-fs (vda): mounted filesystem 377f4e0a-d159-4590-92e4-84593991aac2 ro with ordered data mode. Quota mode: disabled.
+VFS: Mounted root (ext4 filesystem) readonly on device 254:0.
+devtmpfs: mounted
+Freeing unused kernel memory: 1152K
+Run /sbin/init as init process
+  with arguments:
+    /sbin/init
+  with environment:
+    HOME=/
+    TERM=linux
+EXT4-fs (vda): re-mounted 377f4e0a-d159-4590-92e4-84593991aac2 r/w. Quota mode: disabled.
+kqueue_lab: loading out-of-tree module taints kernel.
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=3, copied=3
+kqueue_lab: write requested=4097, copied=4096
+kqueue_lab: read requested=4097, copied=4096
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=2, copied=2
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=3, copied=3
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=4096, copied=4096
+kqueue_lab: read requested=3, copied=3
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=4096, copied=4096
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: write requested=4093, copied=4093
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: read requested=4096, copied=4095
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: write requested=4096, copied=4096
+kqueue_lab: device opened
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: read requested=4096, copied=4096
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device opened
+kqueue_lab: write requested=1024, copied=1024
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=7
+kqueue_lab: device opened
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=31, copied=31
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=11
+kqueue_lab: device opened
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=32
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=95, copied=95
+kqueue_lab: write requested=127, copied=18
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=109, copied=109
+kqueue_lab: write requested=127, copied=4
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=28
+kqueue_lab: write requested=123, copied=123
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=31, copied=31
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=96, copied=96
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=4095, copied=4095
+kqueue_lab: read requested=4095, copied=4095
+kqueue_lab: write requested=2, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: write requested=4095, copied=4095
+kqueue_lab: read requested=4095, copied=4095
+kqueue_lab: write requested=2, copied=2
+kqueue_lab: read requested=2, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=2, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: write requested=4096, copied=4096
+kqueue_lab: read requested=2, copied=1
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: read requested=4096, copied=4096
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: device opened
+kqueue_lab: device opened
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=80
+kqueue_lab: device opened
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=32, copied=32
+kqueue_lab: device released
+kqueue_lab: device opened
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=124
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=124
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=124
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=124
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=124
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=124
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=124
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=124
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=80
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=56, copied=56
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: device released
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=103
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: write requested=251, copied=251
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: write requested=160, copied=160
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: device released
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=32, copied=32
+kqueue_lab: device released
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=127, copied=127
+kqueue_lab: read requested=56, copied=56
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+
+DONE_3b990ecabc454039a202cc80093e9acc:0
+LABCHECK> LABCHECK> Stopping crond: stopped /usr/sbin/crond (pid 113)
+OK
+Stopping network: OK
+Stopping klogd: stopped /sbin/klogd (pid 68)
+OK
+Stopping syslogd: stopped /sbin/syslogd (pid 64)
+OK
+Seeding 256 bits without crediting
+Saving 256 bits of non-creditable seed for next boot
+umount: devtmpfs busy - remounted read-only
+The system is going down NOW!
+Sent SIGTERM to all processes
+reboot: Power down

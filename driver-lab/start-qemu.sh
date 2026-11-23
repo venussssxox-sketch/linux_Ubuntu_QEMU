@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 lab_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-images="$lab_dir/buildroot-2025.02.19/output/images"
+images="${KQUEUE_IMAGES_DIR:-$lab_dir/buildroot-2025.02.19/output/images}"
 test -f "$images/Image"
 test -f "$images/rootfs.ext4"
 # Snapshot mode keeps the built rootfs unchanged between practice sessions.

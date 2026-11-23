@@ -4,6 +4,7 @@ import argparse
 import datetime
 import hashlib
 import json
+import os
 from pathlib import Path
 import re
 import shlex
@@ -16,18 +17,35 @@ lab = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--rounds', type=int, default=10)
 parser.add_argument('--timeout', type=int, default=120, help='seconds per round')
+parser.add_argument('--expected-tests', type=int, default=13,
+                    help='expected PASS results in each complete round')
+parser.add_argument('--images-dir', type=Path,
+                    default=lab / 'buildroot-2025.02.19/output/images')
+parser.add_argument('--deployment-dir', type=Path,
+                    default=lab / 'rootfs-overlay/root')
 parser.add_argument('--label', default='regression')
 args = parser.parse_args()
-if args.rounds < 1 or args.timeout < 1 or not re.fullmatch(r'[A-Za-z0-9_-]+', args.label):
-    parser.error('positive rounds/timeout and a simple alphanumeric label required')
+if (args.rounds < 1 or args.timeout < 1 or args.expected_tests < 1 or
+        not re.fullmatch(r'[A-Za-z0-9_-]+', args.label)):
+    parser.error('positive rounds/timeout/test count and a simple label required')
 stamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
 out = lab / 'logs' / (stamp + '-' + args.label)
 out.mkdir(exist_ok=False)
-files = sorted((lab / 'rootfs-overlay/root').glob('kqueue_*'))
-files.append(lab / 'rootfs-overlay/root/run-kqueue-regression.sh')
+images_dir = args.images_dir.resolve()
+deployment_dir = args.deployment_dir.resolve()
+for required in (images_dir / 'Image', images_dir / 'rootfs.ext4',
+                 deployment_dir / 'kqueue_lab.ko',
+                 deployment_dir / 'run-kqueue-regression.sh'):
+    if not required.exists():
+        parser.error(f'missing required artifact: {required}')
+files = sorted(deployment_dir.glob('kqueue_*'))
+files.append(deployment_dir / 'run-kqueue-regression.sh')
 hashes = {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in files if p.is_file()}
 report = {'started_utc': stamp, 'requested_rounds': args.rounds,
-          'timeout_seconds': args.timeout, 'rounds': [], 'deployed_sha256': hashes,
+          'timeout_seconds': args.timeout, 'expected_tests': args.expected_tests,
+          'rounds': [], 'deployed_sha256': hashes,
+          'images_dir': str(images_dir),
+          'deployment_dir': str(deployment_dir),
           'git_head': subprocess.check_output(['git','rev-parse','HEAD'], cwd=lab, text=True).strip(),
           'source_sha256': {str(p.relative_to(lab)): hashlib.sha256(p.read_bytes()).hexdigest()
                             for p in [lab/'drivers/kqueue_lab/kqueue_lab.c', *sorted((lab/'userspace').glob('*.c'))]},
@@ -36,7 +54,10 @@ start = time.monotonic()
 child = None
 try:
     with (out/'serial.log').open('w') as serial:
-        child = pexpect.spawn('/bin/bash', [str(lab/'start-qemu.sh')], encoding='utf-8',
+        guest_env = os.environ.copy()
+        guest_env['KQUEUE_IMAGES_DIR'] = str(images_dir)
+        child = pexpect.spawn('/bin/bash', [str(lab/'start-qemu.sh')],
+                              env=guest_env, encoding='utf-8',
                               codec_errors='replace', timeout=180)
         child.logfile_read = serial
         child.expect('login:')
@@ -69,7 +90,9 @@ try:
             (out/f'round-{number:03}.log').write_text(output)
             passed = re.findall(r'^passed: (\d+)\r?$', output, re.M)
             failed = re.findall(r'^failed: (\d+)\r?$', output, re.M)
-            ok = code == 0 and passed == ['11'] and failed == ['0'] and output.count('RESULT: PASS - ') == 11
+            expected = str(args.expected_tests)
+            ok = (code == 0 and passed == [expected] and failed == ['0'] and
+                  output.count('RESULT: PASS - ') == args.expected_tests)
             report['rounds'].append({'round': number, 'exit_code': code, 'passed': passed,
                                      'failed': failed, 'success': ok,
                                      'elapsed_seconds': round(time.monotonic()-tick, 3)})
