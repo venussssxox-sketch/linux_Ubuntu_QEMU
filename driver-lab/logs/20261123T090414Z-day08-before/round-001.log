@@ -1,0 +1,73 @@
+
+=== RUN: basic read/write ===
+PASS: zero-length write returned 0
+PASS: zero-length read returned 0
+PASS: wrote and read back 3 bytes: abc
+PASS: empty queue returned EAGAIN
+RESULT: PASS - basic read/write
+
+=== RUN: ioctl state and errors ===
+unknown command: ENOTTY PASS
+bad address: EFAULT PASS
+empty: capacity=4096 used=0 available=4096
+after write: capacity=4096 used=3 available=4093
+second query: capacity=4096 used=3 available=4093
+after read: capacity=4096 used=1 available=4095
+kqueue ioctl test: PASS
+RESULT: PASS - ioctl state and errors
+
+=== RUN: blocking read ===
+PASS: child remained blocked while FIFO was empty
+PASS: child read 3 bytes after wake-up: abc
+PASS: parent write woke the blocked child
+RESULT: PASS - blocking read
+
+=== RUN: blocking write ===
+PASS: child remained blocked while FIFO was full
+PASS: child wrote 3 bytes after wake-up: XYZ
+PASS: parent read created space and woke the child
+RESULT: PASS - blocking write
+
+=== RUN: signal interruption ===
+PASS: child remained blocked before SIGUSR1
+PASS: blocked read returned EINTR after SIGUSR1
+PASS: parent SIGUSR1 interrupted the blocked child
+RESULT: PASS - signal interruption
+
+=== RUN: poll readiness ===
+PASS: empty FIFO revents=0x4
+PASS: non-empty, non-full FIFO revents=0x5
+PASS: full FIFO revents=0x1
+PASS: FIFO after one-byte read revents=0x5
+PASS: drained FIFO revents=0x4
+PASS: empty FIFO POLLIN wait timed out
+PASS: POLLIN wait woke after another process wrote Z
+PASS: POLLOUT wait woke after another process read one byte
+RESULT: PASS - poll readiness
+
+=== RUN: producer and consumer ===
+PASS: one producer and one consumer preserved 1024-byte order
+PASS: two producers delivered 6000 A bytes and 6000 B bytes
+RESULT: PASS - producer and consumer
+
+=== RUN: invalid user buffers ===
+PASS: invalid user buffers returned EFAULT without consuming data
+RESULT: PASS - invalid user buffers
+
+=== RUN: partial user copy faults ===
+partial fault write: returned=-1 used=1 expected=1/1
+FAIL: partial fault regression (errno=14)
+RESULT: FAIL - partial user copy faults
+
+=== RUN: SIGIO notification ===
+PASS: SIGIO reported newly readable data and read returned Z
+RESULT: PASS - SIGIO notification
+
+=== RUN: module lifecycle ===
+PASS: unload refused while device was open
+PASS: module unloaded after device close
+RESULT: PASS - module lifecycle
+
+=== REGRESSION SUMMARY ===
+passed: 10
+failed: 1

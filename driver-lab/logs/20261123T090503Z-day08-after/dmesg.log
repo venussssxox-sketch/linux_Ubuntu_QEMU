@@ -1,0 +1,2416 @@
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: device opened
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=32
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=95, copied=95
+kqueue_lab: write requested=127, copied=18
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=109, copied=109
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=62
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=65, copied=65
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=31, copied=31
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=53
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=32
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=95, copied=95
+kqueue_lab: write requested=127, copied=18
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=109, copied=109
+kqueue_lab: write requested=127, copied=4
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=28
+kqueue_lab: write requested=123, copied=123
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=31, copied=31
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=54, copied=54
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=4095, copied=4095
+kqueue_lab: read requested=4095, copied=4095
+kqueue_lab: write requested=2, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: write requested=4095, copied=4095
+kqueue_lab: read requested=4095, copied=4095
+kqueue_lab: write requested=2, copied=2
+kqueue_lab: read requested=2, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=3, copied=3
+kqueue_lab: write requested=4097, copied=4096
+kqueue_lab: read requested=4097, copied=4096
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=2, copied=2
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=3, copied=3
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=4096, copied=4096
+kqueue_lab: read requested=3, copied=3
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=4096, copied=4096
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: write requested=4093, copied=4093
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: read requested=4096, copied=4095
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: write requested=4096, copied=4096
+kqueue_lab: device opened
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: read requested=4096, copied=4096
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device opened
+kqueue_lab: write requested=1024, copied=1024
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=7
+kqueue_lab: device opened
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: device opened
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=32
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=14, copied=14
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=31, copied=31
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=85
+kqueue_lab: write requested=95, copied=95
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=64
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=63, copied=63
+kqueue_lab: write requested=127, copied=50
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=77, copied=77
+kqueue_lab: write requested=127, copied=36
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=91, copied=91
+kqueue_lab: write requested=127, copied=22
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=28
+kqueue_lab: write requested=105, copied=105
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=31, copied=31
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=22, copied=22
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=4095, copied=4095
+kqueue_lab: read requested=4095, copied=4095
+kqueue_lab: write requested=2, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: write requested=4095, copied=4095
+kqueue_lab: read requested=4095, copied=4095
+kqueue_lab: write requested=2, copied=2
+kqueue_lab: read requested=2, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=3, copied=3
+kqueue_lab: write requested=4097, copied=4096
+kqueue_lab: read requested=4097, copied=4096
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=2, copied=2
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=3, copied=3
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=4096, copied=4096
+kqueue_lab: read requested=3, copied=3
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=4096, copied=4096
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: write requested=4093, copied=4093
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: read requested=4096, copied=4095
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: write requested=4096, copied=4096
+kqueue_lab: device opened
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: read requested=4096, copied=4096
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device opened
+kqueue_lab: write requested=1024, copied=1024
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=7
+kqueue_lab: device opened
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: device opened
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=32
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=95, copied=95
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=31, copied=31
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=52
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=32
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=28
+kqueue_lab: write requested=95, copied=95
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=31, copied=31
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=55, copied=55
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=4095, copied=4095
+kqueue_lab: read requested=4095, copied=4095
+kqueue_lab: write requested=2, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: write requested=4095, copied=4095
+kqueue_lab: read requested=4095, copied=4095
+kqueue_lab: write requested=2, copied=2
+kqueue_lab: read requested=2, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=3, copied=3
+kqueue_lab: write requested=4097, copied=4096
+kqueue_lab: read requested=4097, copied=4096
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=2, copied=2
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=3, copied=3
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=4096, copied=4096
+kqueue_lab: read requested=3, copied=3
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=4096, copied=4096
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: write requested=4093, copied=4093
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: read requested=4096, copied=4095
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: write requested=4096, copied=4096
+kqueue_lab: device opened
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: read requested=4096, copied=4096
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device opened
+kqueue_lab: write requested=1024, copied=1024
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=7
+kqueue_lab: device opened
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=32
+kqueue_lab: device opened
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=95, copied=95
+kqueue_lab: write requested=127, copied=18
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=109, copied=109
+kqueue_lab: write requested=127, copied=4
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=123, copied=123
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=75
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=52, copied=52
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=19
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=108, copied=108
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=118
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=9, copied=9
+kqueue_lab: write requested=127, copied=104
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=23, copied=23
+kqueue_lab: write requested=127, copied=90
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=37, copied=37
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=62
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=65, copied=65
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=31, copied=31
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=11
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=32
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=28
+kqueue_lab: write requested=95, copied=95
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=31, copied=31
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=96, copied=96
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=4095, copied=4095
+kqueue_lab: read requested=4095, copied=4095
+kqueue_lab: write requested=2, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: write requested=4095, copied=4095
+kqueue_lab: read requested=4095, copied=4095
+kqueue_lab: write requested=2, copied=2
+kqueue_lab: read requested=2, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=3, copied=3
+kqueue_lab: write requested=4097, copied=4096
+kqueue_lab: read requested=4097, copied=4096
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=2, copied=2
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=3, copied=3
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=4096, copied=4096
+kqueue_lab: read requested=3, copied=3
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=4096, copied=4096
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: write requested=4093, copied=4093
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: read requested=4096, copied=4095
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: write requested=4096, copied=4096
+kqueue_lab: device opened
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: read requested=4096, copied=4096
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device opened
+kqueue_lab: write requested=1024, copied=1024
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=7
+kqueue_lab: device opened
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: device opened
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=32
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=95, copied=95
+kqueue_lab: write requested=127, copied=18
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=109, copied=109
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=117
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=10, copied=10
+kqueue_lab: write requested=127, copied=103
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=24, copied=24
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=104
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=23, copied=23
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=119
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=8, copied=8
+kqueue_lab: write requested=127, copied=105
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=22, copied=22
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=31, copied=31
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=38
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=32
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=28
+kqueue_lab: write requested=95, copied=95
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=31, copied=31
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=69, copied=69
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=4095, copied=4095
+kqueue_lab: read requested=4095, copied=4095
+kqueue_lab: write requested=2, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: write requested=4095, copied=4095
+kqueue_lab: read requested=4095, copied=4095
+kqueue_lab: write requested=2, copied=2
+kqueue_lab: read requested=2, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=3, copied=3
+kqueue_lab: write requested=4097, copied=4096
+kqueue_lab: read requested=4097, copied=4096
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=2, copied=2
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=3, copied=3
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=4096, copied=4096
+kqueue_lab: read requested=3, copied=3
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=4096, copied=4096
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: write requested=4093, copied=4093
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: read requested=4096, copied=4095
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: write requested=4096, copied=4096
+kqueue_lab: device opened
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: read requested=4096, copied=4096
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device opened
+kqueue_lab: write requested=1024, copied=1024
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=7
+kqueue_lab: device opened
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=32
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: device opened
+kqueue_lab: write requested=127, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=14, copied=14
+kqueue_lab: write requested=127, copied=99
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=28, copied=28
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=43
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=84, copied=84
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=114
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=13, copied=13
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=101
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=26, copied=26
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=116
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=11, copied=11
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=18
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=109, copied=109
+kqueue_lab: write requested=127, copied=117
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=10, copied=10
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=104
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=23, copied=23
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=31, copied=31
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=39
+kqueue_lab: write requested=95, copied=95
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=31, copied=31
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=96, copied=96
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=4095, copied=4095
+kqueue_lab: read requested=4095, copied=4095
+kqueue_lab: write requested=2, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: write requested=4095, copied=4095
+kqueue_lab: read requested=4095, copied=4095
+kqueue_lab: write requested=2, copied=2
+kqueue_lab: read requested=2, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=3, copied=3
+kqueue_lab: write requested=4097, copied=4096
+kqueue_lab: read requested=4097, copied=4096
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=2, copied=2
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=3, copied=3
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=4096, copied=4096
+kqueue_lab: read requested=3, copied=3
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=4096, copied=4096
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: write requested=4093, copied=4093
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: read requested=4096, copied=4095
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: write requested=4096, copied=4096
+kqueue_lab: device opened
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: read requested=4096, copied=4096
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device opened
+kqueue_lab: write requested=1024, copied=1024
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=7
+kqueue_lab: device opened
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: device opened
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=32
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=95, copied=95
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=4
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=123, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=10, copied=10
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=61
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=66, copied=66
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=104
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=23, copied=23
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=105
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=22, copied=22
+kqueue_lab: write requested=127, copied=91
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=36, copied=36
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=31, copied=31
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=109
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=32
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=95, copied=95
+kqueue_lab: write requested=127, copied=18
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=109, copied=109
+kqueue_lab: write requested=127, copied=4
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=28
+kqueue_lab: write requested=123, copied=123
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=31, copied=31
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=111, copied=111
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=4095, copied=4095
+kqueue_lab: read requested=4095, copied=4095
+kqueue_lab: write requested=2, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: write requested=4095, copied=4095
+kqueue_lab: read requested=4095, copied=4095
+kqueue_lab: write requested=2, copied=2
+kqueue_lab: read requested=2, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=3, copied=3
+kqueue_lab: write requested=4097, copied=4096
+kqueue_lab: read requested=4097, copied=4096
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=2, copied=2
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=3, copied=3
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=4096, copied=4096
+kqueue_lab: read requested=3, copied=3
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: read requested=4096, copied=4096
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=3, copied=3
+kqueue_lab: write requested=4093, copied=4093
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: read requested=4096, copied=4095
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: write requested=4096, copied=4096
+kqueue_lab: device opened
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: read requested=4096, copied=4096
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device opened
+kqueue_lab: write requested=1024, copied=1024
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=7
+kqueue_lab: device opened
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: device opened
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=32
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=31, copied=31
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=14
+kqueue_lab: write requested=95, copied=95
+kqueue_lab: read requested=113, copied=95
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=14
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=32
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=28
+kqueue_lab: write requested=95, copied=95
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=127, copied=127
+kqueue_lab: write requested=31, copied=31
+kqueue_lab: device released
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=113, copied=113
+kqueue_lab: read requested=97, copied=97
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: write requested=4095, copied=4095
+kqueue_lab: read requested=4095, copied=4095
+kqueue_lab: write requested=2, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: write requested=4095, copied=4095
+kqueue_lab: read requested=4095, copied=4095
+kqueue_lab: write requested=2, copied=2
+kqueue_lab: read requested=2, copied=1
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device opened
+kqueue_lab: write requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: read requested=1, copied=1
+kqueue_lab: device released
+kqueue_lab: unregistered successfully
+kqueue_lab: registered successfully
+kqueue_lab: device opened
+kqueue_lab: device released
+kqueue_lab: unregistered successfully

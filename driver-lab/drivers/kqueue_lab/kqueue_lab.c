@@ -113,7 +113,8 @@ static ssize_t kqueue_read(struct file *file,
     ret = kfifo_to_user(&kqueue_fifo, buf, count, &copied);
     mutex_unlock(&kqueue_fifo_lock);
 
-    if (ret != 0)
+    /* A partial user copy advances the FIFO even when it reports EFAULT. */
+    if (ret != 0 && copied == 0)
         return ret;
 
     if (copied > 0)
@@ -159,7 +160,8 @@ static ssize_t kqueue_write(struct file *file,
     ret = kfifo_from_user(&kqueue_fifo, buf, count, &copied);
     mutex_unlock(&kqueue_fifo_lock);
 
-    if (ret != 0)
+    /* A partial user copy advances the FIFO even when it reports EFAULT. */
+    if (ret != 0 && copied == 0)
         return ret;
 
     if (copied > 0)

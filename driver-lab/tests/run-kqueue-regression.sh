@@ -130,6 +130,7 @@ run_test "signal interruption" "/root/kqueue_signal_interrupt_test"
 run_test "poll readiness" "/root/kqueue_poll_test"
 run_test "producer and consumer" "/root/kqueue_producer_consumer_test"
 run_test "invalid user buffers" "/root/kqueue_error_test"
+run_test "partial user copy faults" "/root/kqueue_partial_fault_test"
 run_test "SIGIO notification" "/root/kqueue_sigio_test"
 
 run_lifecycle_test

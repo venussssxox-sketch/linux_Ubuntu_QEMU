@@ -2,7 +2,7 @@
 
 本项目在 Ubuntu x86_64 主机上使用 Buildroot 和 QEMU 构建 ARM64 Linux 实验环境，并实现 `/dev/kqueue_lab` 数据队列字符设备。驱动以 `miscdevice` 注册设备，使用 4096 字节 `kfifo` 保存共享字节流，并逐步实现非阻塞 I/O、阻塞等待、并发保护、poll 就绪通知、错误路径、模块生命周期、`SIGIO/fasync` 异步通知和 ioctl 状态查询。
 
-当前所有功能均已使用 Linux 6.12.27 ARM64 QEMU 来宾实际验证。每日学习过程和验证证据按时间记录在 `logs/day01-summary.md` 至 `logs/day07-summary.md`。第 7 天完成了功能基线复测与资源生命周期复查；有界重复回归、长期稳定性测试及干净环境复现仍待完成。
+当前所有功能均已使用 Linux 6.12.27 ARM64 QEMU 来宾实际验证。每日学习过程和验证证据按时间记录在 `logs/day01-summary.md` 至 `logs/day08-summary.md`。第 8 天完成锁与唤醒路径复查、部分用户拷贝故障修复及 10 轮有界重复回归；长期稳定性测试及干净环境复现仍待完成。
 
 ## 当前实现
 
@@ -175,7 +175,7 @@ buildroot-2025.02.19/output/host/bin/aarch64-buildroot-linux-gnu-gcc \
 printf 'regression_exit=%s\n' "$?"
 ```
 
-脚本依次运行 9 个普通功能测试。每项普通测试前重新加载模块、结束后卸载模块，保证 FIFO 状态相互隔离；模块生命周期测试在后台保持设备打开，确认第一次卸载被拒绝，关闭设备后第二次卸载成功。2026-11-18 的 ARM64 QEMU 实测汇总为 `passed: 10`、`failed: 0`、退出码 0。
+脚本当前依次运行 10 个普通功能测试（包括部分用户拷贝故障），加上独立模块生命周期测试，共 11 项。每项普通测试前重新加载模块、结束后卸载模块，保证 FIFO 状态相互隔离；模块生命周期测试在后台保持设备打开，确认第一次卸载被拒绝，关闭设备后第二次卸载成功。2026-11-18 的 ARM64 QEMU 实测汇总为 `passed: 10`、`failed: 0`、退出码 0。
 
 也可以单独运行各程序定位失败：
 
@@ -206,3 +206,18 @@ poweroff
 模块首次加载时内核可能提示 out-of-tree module taints kernel：表示加载了树外模块，不等同于加载失败。是否成功以返回值、/proc/modules 和模块日志共同判断。
 
 本文件中的使用步骤须以实际验收结果为准；最终结果记录在 logs/environment-verified.txt（完成后生成）。
+
+## 有界重复回归与部分拷贝故障验证
+
+主机中执行以下命令，重建当前源码、部署模块和全部测试、更新根文件系统：
+
+```bash
+bash /home/zhaojinxin/linux_Ubuntu/driver-lab/tests/build-kqueue.sh
+python3 /home/zhaojinxin/linux_Ubuntu/driver-lab/tests/repeat-qemu-regression.py --rounds 10 --timeout 120 --label regression
+```
+
+Python 编排依赖主机 pexpect；`--rounds` 是完整回归轮数，`--timeout` 是每轮最长等待秒数，`--label` 是日志目录标签。脚本启动自己的快照虚拟机，核对镜像与 overlay 中模块及测试文件的 SHA-256，保存串口、每轮输出和 JSON 汇总，检查模块卸载、最终内核日志和正常关机。失败或超时返回非零并终止自己的虚拟机。结果存于 `logs/<UTC时间>-<标签>/`，同名目录不会覆盖。
+
+2026-11-23 实测：修复前原有 10 项通过、新增部分故障项失败；修复后 10 轮 × 11 项全部通过，完整会话 80.275 秒。部分用户拷贝只要已经传输了字节，就返回实际字节数并通知等待者；完全未传输才返回拷贝错误。
+
+证据及边界见 `logs/day08-summary.md` 和 `logs/day08-code-review.md`。这是 QEMU 功能重复回归，不是 8 小时稳定性测试，也不是实物性能结论。

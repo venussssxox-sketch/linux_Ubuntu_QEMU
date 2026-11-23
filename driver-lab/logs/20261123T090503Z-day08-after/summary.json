@@ -1,0 +1,160 @@
+{
+  "started_utc": "20261123T090503Z",
+  "requested_rounds": 10,
+  "timeout_seconds": 120,
+  "rounds": [
+    {
+      "round": 1,
+      "exit_code": 0,
+      "passed": [
+        "11"
+      ],
+      "failed": [
+        "0"
+      ],
+      "success": true,
+      "elapsed_seconds": 7.325
+    },
+    {
+      "round": 2,
+      "exit_code": 0,
+      "passed": [
+        "11"
+      ],
+      "failed": [
+        "0"
+      ],
+      "success": true,
+      "elapsed_seconds": 7.486
+    },
+    {
+      "round": 3,
+      "exit_code": 0,
+      "passed": [
+        "11"
+      ],
+      "failed": [
+        "0"
+      ],
+      "success": true,
+      "elapsed_seconds": 7.374
+    },
+    {
+      "round": 4,
+      "exit_code": 0,
+      "passed": [
+        "11"
+      ],
+      "failed": [
+        "0"
+      ],
+      "success": true,
+      "elapsed_seconds": 7.461
+    },
+    {
+      "round": 5,
+      "exit_code": 0,
+      "passed": [
+        "11"
+      ],
+      "failed": [
+        "0"
+      ],
+      "success": true,
+      "elapsed_seconds": 7.381
+    },
+    {
+      "round": 6,
+      "exit_code": 0,
+      "passed": [
+        "11"
+      ],
+      "failed": [
+        "0"
+      ],
+      "success": true,
+      "elapsed_seconds": 7.398
+    },
+    {
+      "round": 7,
+      "exit_code": 0,
+      "passed": [
+        "11"
+      ],
+      "failed": [
+        "0"
+      ],
+      "success": true,
+      "elapsed_seconds": 7.424
+    },
+    {
+      "round": 8,
+      "exit_code": 0,
+      "passed": [
+        "11"
+      ],
+      "failed": [
+        "0"
+      ],
+      "success": true,
+      "elapsed_seconds": 7.352
+    },
+    {
+      "round": 9,
+      "exit_code": 0,
+      "passed": [
+        "11"
+      ],
+      "failed": [
+        "0"
+      ],
+      "success": true,
+      "elapsed_seconds": 7.298
+    },
+    {
+      "round": 10,
+      "exit_code": 0,
+      "passed": [
+        "11"
+      ],
+      "failed": [
+        "0"
+      ],
+      "success": true,
+      "elapsed_seconds": 7.283
+    }
+  ],
+  "deployed_sha256": {
+    "kqueue_blocking_test": "e5be736840ae1cdc1ab0882a1a20b63bf816ec5c15579664af17eb50071d41f9",
+    "kqueue_blocking_write_test": "1622162c47cc96a02ac97ba1b9776306f7735408c07392b998e5bd7389da0ff1",
+    "kqueue_error_test": "2e1db7690b1f5d09b169278cfbcb7b6d259395a22a5a026ffbb98a0eb82666d3",
+    "kqueue_hold_open_test": "bf338143e8c72f75fd266a9f4c33a210c2dccde788b76b0cde8b3321b8e19e57",
+    "kqueue_ioctl_test": "b415dfd6e522614ea05503bd8e024e3c763b0be9cafa8d9397fa471afde8eda7",
+    "kqueue_lab.ko": "3e25096bad7526c881ac84f848705b9be5325a4ce69e1920f99088cf0e51d134",
+    "kqueue_partial_fault_test": "20f79057d8f7249b0d3456239dc9541d1827c688862525be4432ac2dae3625f6",
+    "kqueue_poll_test": "cc2890e92a8ce68ed78b67c10a2d8fac9e14c06e8ac1ab8687c9763764bb44b4",
+    "kqueue_producer_consumer_test": "6340cb6bad865e1afea979768d7f7a51da67defbb87d9cb22bb872a387674485",
+    "kqueue_sigio_test": "98548563ae2c7f5cb477b77fc7d68fa1b5c78e2513f14d56acefe9b42f9b9fae",
+    "kqueue_signal_interrupt_test": "343820d6fb9ef16bc388e786c4d4822a04d8178f011e7c1b6d388b04d18f1c32",
+    "kqueue_test": "ad723a78b502eb9f1172d744c41488bde6099b423a487dff9920a429133eb665",
+    "run-kqueue-regression.sh": "11ce30af8e62b1256285f8c6f56cde331aea0d6c4d206567be36b2aa6bb5aadf"
+  },
+  "git_head": "6c79fd5ca1c59a0d34d4ba4bf667c884614ceb90",
+  "source_sha256": {
+    "drivers/kqueue_lab/kqueue_lab.c": "5859f2a5429e6597b1079e3a4dba27c6f3ad63b01801bd99008ce9fae1c5271f",
+    "userspace/kqueue_blocking_test.c": "7b26bbfcdf60ae9e1b5482c282128081f56f144a73ad1790ff57fc9c5323dc4e",
+    "userspace/kqueue_blocking_write_test.c": "4549d0c24c68e7ec4d215798ca6416b46a19fb5adbd0250e9ed7923149911271",
+    "userspace/kqueue_error_test.c": "064a53a5d5783f16150aecea75f675f987f0f315f5b6d36544019051ea1e7c2a",
+    "userspace/kqueue_hold_open_test.c": "6dc116219c818b101a609a4e5c5b40aa270dd8d966417a3dc61bb26b3c5bc78a",
+    "userspace/kqueue_ioctl_test.c": "3f3d09acab56ecfae2e4c6f8d6fbbc12a427e37f65352683dcb15b261be15e62",
+    "userspace/kqueue_partial_fault_test.c": "6a52957ec56f0b365da049c5f65391de47579f2cea10c31cc31d6641878d3f0b",
+    "userspace/kqueue_poll_test.c": "b7cdcd89becf2047a90305c24ccc4671ea65703e63fd0f1b0b2b284576e2be33",
+    "userspace/kqueue_producer_consumer_test.c": "f1885d23b6b588cefeb7f6ecdea5e5082fa1c72c66f9c86fa8d4df491b2b8c5a",
+    "userspace/kqueue_sigio_test.c": "2cd568b29d60e247f082300817d9b732376c88f22cd4980f40abd29e893fad18",
+    "userspace/kqueue_signal_interrupt_test.c": "7571efeb6da7f27ce8120532b0fcb90d86c8af4aaaf78d9d66fe010ca005526c",
+    "userspace/kqueue_test.c": "222950c2ab9b9a4d50198557ba79956f0a0c88243f9019f696d6b1e484b48893"
+  },
+  "success": true,
+  "guest_environment": "Linux buildroot 6.12.27 #2 SMP Wed Nov 18 20:04:44 CST 2026 aarch64 GNU/Linux",
+  "elapsed_seconds": 80.275
+}
